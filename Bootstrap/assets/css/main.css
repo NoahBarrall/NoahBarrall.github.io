@@ -222,8 +222,8 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #000000;
-  --default-color: #ffffff;
+  --background-color: #2e5c98;
+  --default-color: #3e61ed;
   --heading-color: #ffffff;
   --contrast-color: #000000;
   color: var(--default-color);
