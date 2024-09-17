@@ -294,7 +294,6 @@ h6 {
 .scrolled .header {
   --background-color: rgba(0, 0, 0, 0.85);
 }
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -320,7 +319,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
-    font-size: 13px;
+    font-size: 16px;
     font-family: var(--nav-font);
     text-transform: uppercase;
     font-weight: 500;
@@ -847,7 +846,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  /* background: color-mix(in srgb, var(--background-color), transparent 30%); */
   position: absolute;
   inset: 0;
   z-index: 2;
