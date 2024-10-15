@@ -249,22 +249,22 @@ h6 {
   color: var(--heading-color);
 }
 
-.header .btn-getstarted,
-.header .btn-getstarted:focus {
+.header .btn-login,
+.header .btn-login:focus {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-size: 13px;
   font-weight: 500;
   padding: 8px 25px;
-  margin: 0 0 0 30px;
+  margin: 0 0 0 0px;
   border-radius: 50px;
   transition: 0.3s;
   text-transform: uppercase;
   font-family: var(--nav-font);
 }
 
-.header .btn-getstarted:hover,
-.header .btn-getstarted:focus:hover {
+.header .btn-login:hover,
+.header .btn-login:focus:hover {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
