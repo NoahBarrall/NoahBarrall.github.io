@@ -88,6 +88,10 @@ a:hover {
   cursor: pointer;
 }
 
+.bottom-bar{
+    margin-right: 50px;
+}
+
 /* Add Zoom Animation */
 .animate {
   -webkit-animation: animatezoom 0.6s;
@@ -109,8 +113,5 @@ a:hover {
   span.psw {
      display: block;
      float: none;
-  }
-  .cancelbtn {
-     width: 100%;
   }
 }
