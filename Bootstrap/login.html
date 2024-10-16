@@ -26,6 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/forms.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Remember
@@ -49,16 +50,39 @@
       <nav id="navmenu" class="navmenu">
         <ul>
             <li><a href="index.html">Homepage</a></li>
-            <li><a href="intra.html" class="active">Intramural Signups</a></li>
+            <li><a href="intra.html">Intramural Signups</a></li>
             <li><a href="pickup.html">Pickup Signups</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="login.html" class="active">Login</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
     </div>
   </header>
 
-  <h1>Login page</h1>
+  <!-- <div id="id01" class="modal"> -->
+  <div>
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <img src="assets/img/RecZone_Logo_NoBG.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Messiah Email" name="email" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <span class="psw"><a href="#">Forgot Password?</a></span>
+      </div>
+  
+    </form>
+  </div>
 
 </body>
 </html>
