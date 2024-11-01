@@ -49,10 +49,10 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="intra.html">Intramural Signups</a></li>
-            <li><a href="pickup.html">Pickup Signups</a></li>
-            <li><a href="login.html" class="active">Login</a></li>
+            <li><a href="index.php">Homepage</a></li>
+            <li><a href="intra.php">Intramural Signups</a></li>
+            <li><a href="pickup.php">Pickup Signups</a></li>
+            <li><a href="login.php" class="active">Login</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -68,52 +68,18 @@
       </div>
   
       <div class="container">
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Messiah Email" name="email" required>
-
-        <label for="fname"><b>First Name</b></label>
-        <input type="text" placeholder="Enter First Name" name="fname" required>
-
-        <label for="lname"><b>Last Name</b></label>
-        <input type="text" placeholder="Enter Last Name" name="lname" required>
-        <br></br>
-
-        <label for="grade"><b>Grade Level</b></label>
-          <select name="grade" required>
-          <option value="" disabled selected>Select Grade Level</option>
-          <option value="freshman">Freshman</option>
-          <option value="sophomore">Sophomore</option>
-          <option value="junior">Junior</option>
-          <option value="senior">Senior</option>
-          <option value="other">Other</option>
-        </select>
-        <br></br>
-
-
-        <label for="gender"><b>Gender</b></label>
-          <select name="grade" required>
-          <option value="" disabled selected>Select Gender</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
-        <br></br>
-
-
-        <label for="DoB"><b>Date of Birth</b></label>
-        <input type="date" placeholder="Date of Birth" name="DoB" required>
-        <br></br>
+        <label for="newpsw"><b>New Password</b></label>
+        <input type="password" placeholder="New Password" name="new password" required>
   
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-
-        <label for="confirmpsw"><b>Confirm Password</b></label>
-        <input type="password" placeholder="Confirm Password" name="confirmpsw" required>
+        <label for="confnewpsw"><b>Confirm New Password</b></label>
+        <input type="password" placeholder="Confirm New Password" name="confirm new psw" required>
           
-        <button type="submit">Register</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-        <span class="psw"><a href="forgotpsw.html">Forgot Password?</a></span>
+        <button type="submit">Reset Password</button>
+        <div>
+          <label class="bottom-bar">
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
       </div>
   
     </form>

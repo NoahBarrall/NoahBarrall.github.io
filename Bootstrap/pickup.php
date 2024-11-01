@@ -48,10 +48,10 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="intra.html">Intramural Signups</a></li>
-            <li><a href="pickup.html" class="active">Pickup Signups</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="index.php">Homepage</a></li>
+            <li><a href="intra.php">Intramural Signups</a></li>
+            <li><a href="pickup.php" class="active">Pickup Signups</a></li>
+            <li><a href="login.php">Login</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>

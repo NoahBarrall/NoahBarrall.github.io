@@ -49,10 +49,10 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="intra.html">Intramural Signups</a></li>
-            <li><a href="pickup.html">Pickup Signups</a></li>
-            <li><a href="login.html" class="active">Login</a></li>
+            <li><a href="index.php">Homepage</a></li>
+            <li><a href="intra.php">Intramural Signups</a></li>
+            <li><a href="pickup.php">Pickup Signups</a></li>
+            <li><a href="login.php" class="active">Login</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -62,21 +62,58 @@
   <!-- <div id="id01" class="modal"> -->
   <div>
   
-    <form class="modal-content animate" action="/action_page.php" method="post">
+    <form class="modal-content animate" action="forms/AddUser.php" method="post">
       <div class="imgcontainer">
         <img src="assets/img/RecZone_Logo_NoBG.png" alt="Avatar" class="avatar">
       </div>
   
       <div class="container">
-        <label for="emailverif"><b>Email Address</b></label>
-        <input type="email" placeholder="Your Email Address" name="emailverif" required>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Messiah Email" name="email" required>
+
+        <label for="fname"><b>First Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="fname" required>
+
+        <label for="lname"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter Last Name" name="lname" required>
+        <br></br>
+
+        <label for="grade"><b>Grade Level</b></label>
+          <select name="grade" required>
+          <option value="" disabled selected>Select Grade Level</option>
+          <option value="freshman">Freshman</option>
+          <option value="sophomore">Sophomore</option>
+          <option value="junior">Junior</option>
+          <option value="senior">Senior</option>
+          <option value="other">Other</option>
+        </select>
+        <br></br>
+
+
+        <label for="gender"><b>Gender</b></label>
+          <select name="grade" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <br></br>
+
+
+        <label for="DoB"><b>Date of Birth</b></label>
+        <input type="date" placeholder="Date of Birth" name="DoB" required>
+        <br></br>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="confirmpsw"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Confirm Password" name="confirmpsw" required>
           
-        <button type="submit">Send Verification</button><button type="submit">Go Back</button>
-        <div>
-          <label class="bottom-bar">
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
-        </div>
+        <button type="submit">Register</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <span class="psw"><a href="forgotpsw.php">Forgot Password?</a></span>
       </div>
   
     </form>

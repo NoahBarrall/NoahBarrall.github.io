@@ -49,10 +49,10 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="intra.html">Intramural Signups</a></li>
-            <li><a href="pickup.html">Pickup Signups</a></li>
-            <li><a href="login.html" class="active">Login</a></li>
+            <li><a href="index.php">Homepage</a></li>
+            <li><a href="intra.php">Intramural Signups</a></li>
+            <li><a href="pickup.php">Pickup Signups</a></li>
+            <li><a href="login.php" class="active">Login</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -68,19 +68,14 @@
       </div>
   
       <div class="container">
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Messiah Email" name="email" required>
-  
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <label for="emailverif"><b>Email Address</b></label>
+        <input type="email" placeholder="Your Email Address" name="emailverif" required>
           
-        <button type="submit">Login</button>
+        <button type="submit">Send Verification</button><button type="submit">Go Back</button>
         <div>
           <label class="bottom-bar">
             <input type="checkbox" checked="checked" name="remember"> Remember me
           </label>
-          <span><a class="bottom-bar" href="registration.html">Sign up</a></span>
-          <span><a class="bottom-bar" href="forgotpsw.html">Forgot Password?</a></span>
         </div>
       </div>
   

@@ -42,16 +42,16 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <div class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/RecZone_Logo_NoBG.png" alt="" class="reczoneL">
+        <img src="assets/img/RecZone_Logo_NoBG.png" alt="">
         <h2>Falcon RecZone</h2>
       </div>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="nav-headers active">Homepage</a></li>
-          <li><a href="intra.html" class="nav-headers">Intramural Signups</a></li>
-          <li><a href="pickup.html" class="nav-headers">Pickup Signups</a></li>
-          <li><a href="login.html">Login</a></li>
+            <li><a href="index.php">Homepage</a></li>
+            <li><a href="intra.php" class="active">Intramural Signups</a></li>
+            <li><a href="pickup.php">Pickup Signups</a></li>
+            <li><a href="login.php">Login</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -59,74 +59,66 @@
   </header>
 
   <main class="main">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+      <h5 class="">Welcome to the Messiah University Intramural Sports page! Here you will find everything you need to 
+        know regarding the management of intramural sports and current leagues and tournaments we have to offer! 
+        To participate, sign-up, or create teams you will need to create an account through IMLeagues. We welcome 
+        you to Messiah University Intramural Sports and can't wait to see you and your friends compete!
+        <br><br>~ Messiah University Intramural Sports Team; Office of Student Engagement </h5> 
 
-      <img src="assets/img/homepage.png" alt="" data-aos="fade-in">
-
-      <!-- <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2>Welcome to Falcon RecZone</h2>
-            <p>Engaging the Messiah community one sport at a time</p>
-          </div>
-        </div>
-      </div> -->
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
+      <br><br>
 
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <div class="col-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/football.png" class="img-fluid" alt="">
-          </div>
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-7 content" data-aos="fade-up" data-aos-delay="100">
-            <h3>About Falcon RecZone</h3>
-            <p>This is the home of Falcon RecZone, a tool designed by students to engage Messiah students in the community through playing sports. </p>
-            <ul>
-              <li>
-                <i class="bi bi-diagram-3"></i>
-                <div>
-                  <a href="intra.html"><h5>Intramural Sports Signups</h5></a>
-                  <p>This tool houses all signing up for sports organized by messiah’s office of student engagement. 
-                    Students will only be able to create teams, add teammates, and view schedules. Only administrators 
-                    can create/edit events and the game schedule.</p>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/sports/basketball.jpg" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">3v3 Basketball Tournament</a></h4>
+                  <p>Open/Closed</p>
+                  <p>Registration: 10/17/2024-10/18/24</p>
+                  <p>Season: 10/17/2024-10/18/24</p>
                 </div>
-              </li>
-              <li>
-                <i class="bi bi-fullscreen-exit"></i>
-                <div>
-                  <a href="pickup.html"><h5>Pickup Sports Signups</h5></a>
-                  <p>This tool houses signing up for sports organized by students. This feature allows students to 
-                    create an 'event' which will include a sport, location, and time. Any other student can sign up 
-                    to join this event.</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/sports/football.avif" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details"></a>7v7 Flag Football</h4>
+                  <p>Open/Closed</p>
+                  <p>Registration: 10/17/2024-10/18/24</p>
+                  <p>Season: 10/17/2024-10/18/24</p>
                 </div>
-              </li>
-              <li>
-                <i class="bi bi-broadcast"></i>
-                <div>
-                  <h5>FalconChat</h5>
-                  <p>At any point in time, feel free to click on the chat button on the bottom right of the screen to 
-                    speak to our chatbot. FalconChat is trained to answer many questions regarding Falcon RecZone, such 
-                    as rules to a certain sport.</p>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/sports/volleyball.webp" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Co Ed Outdoor Volleyball</a></h4>
+                  <p>Open/Closed</p>
+                  <p>Registration: 10/17/2024-10/18/24</p>
+                  <p>Season: 10/17/2024-10/18/24</p>
                 </div>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
 
         </div>
 
       </div>
 
-    </section><!-- /About Section -->
-
+    </section><!-- /Portfolio Section -->
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -141,7 +133,7 @@
             Using sports to answer our calling, sharing God's love to those around us.
           </p>
           <div class="social-links d-flex mt-4">
-            <a href="form.html"><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
