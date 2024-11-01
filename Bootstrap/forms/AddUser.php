@@ -1,13 +1,9 @@
 <?php
 
 //PHP file with code that takes the input on registration.php 
-// and uses it to create a new user in the database.
+//and uses it to create a new user in the database.
 
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "RecZone";
+include 'config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the submitted name from the form input
@@ -17,9 +13,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($_POST['psw'] == $_POST['confirmpsw']){
 
             // Create a new PDO instance (connect to the database)
-        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-        // Set PDO error mode to exception
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         // Prepare the SQL statement with a placeholder
         $sql = "INSERT INTO User (FirstName, LastName, Email, Grade, DOB, Password, Gender) VALUES (:first, :last, :email, :grade, :dob, :psw, :gender)";

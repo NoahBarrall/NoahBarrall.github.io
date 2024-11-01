@@ -1,3 +1,14 @@
+<?php
+  include 'forms/config.php';
+  try {
+    $stmt = $conn->prepare("SELECT * FROM League");
+    $stmt->execute();
+    $leagues = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  } catch (PDOException $e) {
+    echo "Error: " . $e->getMessage();
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,42 +86,28 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          
+          <?php 
+            if (!empty($leagues)): 
+            foreach ($leagues as $league):
+          ?>
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
                 <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/sports/basketball.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">3v3 Basketball Tournament</a></h4>
-                  <p>Open/Closed</p>
-                  <p>Registration: 10/17/2024-10/18/24</p>
-                  <p>Season: 10/17/2024-10/18/24</p>
+                  <h4><a href="portfolio-details.html" title="More Details">
+                    <?php echo htmlspecialchars($league['LeagueName']); ?></a></h4>
+                  <p>THIS DATA RIGHT FROM DB</p>
+                  <p>Registration: <?php echo htmlspecialchars($league['RegistrationStart']) . 
+                  ' to ' . htmlspecialchars($league['RegistrationEnd']);
+                  ?></p>
+                  <p>Season: <?php echo htmlspecialchars($league['SeasonStart']) . 
+                  ' to ' . htmlspecialchars($league['SeasonEnd']);
+                  ?></p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <a href="assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/sports/football.avif" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details"></a>7v7 Flag Football</h4>
-                  <p>Open/Closed</p>
-                  <p>Registration: 10/17/2024-10/18/24</p>
-                  <p>Season: 10/17/2024-10/18/24</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <a href="assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/sports/volleyball.webp" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Co Ed Outdoor Volleyball</a></h4>
-                  <p>Open/Closed</p>
-                  <p>Registration: 10/17/2024-10/18/24</p>
-                  <p>Season: 10/17/2024-10/18/24</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+          <?php endforeach; endif; $conn = null; ?>
 
           </div><!-- End Portfolio Container -->
 
