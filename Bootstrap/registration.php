@@ -91,7 +91,7 @@
 
 
         <label for="gender"><b>Gender</b></label>
-          <select name="grade" required>
+          <select name="gender" required>
           <option value="" disabled selected>Select Gender</option>
           <option value="male">Male</option>
           <option value="female">Female</option>
