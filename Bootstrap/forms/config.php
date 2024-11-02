@@ -5,7 +5,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "YBt8-f9Ol(!Ifg@z";
 $dbname = "RecZone";
 
 try {
