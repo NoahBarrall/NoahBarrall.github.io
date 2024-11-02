@@ -7,3 +7,9 @@ jobs:
         steps:
             - name: Test Output
               run: echo "here is a test"
+    connect-remote:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: Show databases
+             run: mysql -h localhost --port 3306 -uroot -p -e "SHOW DATABASES";
