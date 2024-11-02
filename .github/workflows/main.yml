@@ -12,4 +12,4 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - name: Show databases
-              run: mysql -h localhost --port 3306 -uroot -pYBt8-f9Ol(!Ifg@z -e "SHOW DATABASES";
+              run: mysql -h "localhost" --port 3306 -u"root" -p"YBt8-f9Ol(!Ifg@z" -e "SHOW DATABASES";
