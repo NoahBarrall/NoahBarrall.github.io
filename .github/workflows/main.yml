@@ -1,0 +1,9 @@
+name: RecZone
+run-name: Setting up RecZone database
+on: [push]
+jobs:
+    test-output:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Test Output
+              run: echo "here is a test"
