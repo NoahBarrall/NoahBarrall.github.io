@@ -54,7 +54,7 @@
       <div class="header-social-links">
         <a href="#" class="twitter"><i class="bi bi-"></i></a>
         <a href="https://github.com/NoahBarrall" target="_blank" class="facebook"><i class="bi bi-github"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
         <a href="https://www.linkedin.com/in/noah-barrall/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
 
